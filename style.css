@@ -363,21 +363,6 @@ header {
 }
 
 @media (max-width: 768px) {
-    
-    .contenedor-servicios, .contenedor-pasos, .contenedor-galeria {
-        flex-direction: column; 
-    }
-    
-    nav {
-        display: none; 
-    }
-
-    h1 {
-        font-size: 2em;
-    }
-    h2 {
-        font-size: 1.5em;
-    }
 }
 
 /* ------------------
@@ -612,4 +597,5 @@ footer p {
     margin: 5px 0;
 
 }
+
 
