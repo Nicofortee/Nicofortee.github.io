@@ -21,15 +21,24 @@
     ESTILO DE LA SECCIÓN INICIO CON IMAGEN DE FONDO
 --------------------- */
 #inicio {
-    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('"video_lavado.mp4"') no-repeat center center/cover; /* Reemplaza 'auto_reluciente_fondo.jpg' con tu imagen */
+    position: relative; 
+    overflow: hidden; 
     color: var(--color-texto-claro);
-    padding: 100px 20px; /* Suficiente padding para que el contenido se vea bien */
-    display: flex; /* Para centrar el contenido vertical y horizontalmente */
+    padding: 100px 20px;
+    display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    min-height: 60vh; /* Ocupa al menos el 60% del alto de la ventana */
-    text-shadow: 2px 2px 4px rgba(0,0,0,0.7); /* Sombra para que el texto resalte */
+    min-height: 80vh; 
+    text-align: center;
+    
+    /* FIX CRÍTICO: Asegura que ocupe TODO el ancho de la ventana del navegador */
+    width: 100vw; 
+    /* Opcional: Centrar la sección si el contenedor padre es más pequeño */
+    margin-left: -50vw; 
+    left: 50%;
+    position: relative;
+    /* FIN FIX CRÍTICO */
 }
 
 #inicio h2 {
@@ -181,10 +190,12 @@ h2 {
     filter: brightness(0.5) contrast(1.1); /* Oscurece y da contraste al video para mejor legibilidad del texto */
 }
 .contenido-inicio {
-    position: relative; /* Coloca el contenido encima del video */
-    z-index: 2; /* Asegura que el contenido esté por encima del video */
-    text-shadow: 2px 2px 5px #1017ea; /* Sombra para que el texto resalte */
-    max-width: 900px; /* Limita el ancho del contenido para mejor lectura */
+    position: relative; 
+    z-index: 2; 
+    text-shadow: 2px 2px 5px rgba(0,0,0,0.8);
+    /* CLAVE: Cambia el max-width para que sea más amplio en el móvil */
+    max-width: 90%; 
+    padding: 0 10px; /* Asegura un poco de espacio en los bordes */
 }
 #inicio h2 {
     font-size: 3.5em;
@@ -592,4 +603,5 @@ footer {
 
 footer p {
     margin: 5px 0;
+
 }
