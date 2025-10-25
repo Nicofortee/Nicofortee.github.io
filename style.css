@@ -363,13 +363,20 @@ header {
 }
 
 @media (max-width: 768px) {
-    .contenedor-pasos {
-        flex-direction: column;
-        align-items: center;
+    
+    .contenedor-servicios, .contenedor-pasos, .contenedor-galeria {
+        flex-direction: column; 
     }
-    .paso {
-        margin-bottom: 20px;
-        max-width: 90%;
+    
+    nav {
+        display: none; 
+    }
+
+    h1 {
+        font-size: 2em;
+    }
+    h2 {
+        font-size: 1.5em;
     }
 }
 
@@ -605,3 +612,4 @@ footer p {
     margin: 5px 0;
 
 }
+
