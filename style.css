@@ -228,73 +228,6 @@ h2 {
 }
 
 /* ------------------
-    SECCIÓN RESEÑAS
---------------------- */
-#reseñas {
-    background-color: var(--color-texto-claro);
-    padding: 60px 20px;
-}
-
-.contenedor-reseñas {
-    display: flex;
-    justify-content: center;
-    gap: 30px;
-    margin: 40px auto;
-    max-width: 1000px;
-}
-
-.reseña {
-    background-color: var(--color-fondo); /* Fondo suave */
-    padding: 25px;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    flex: 1;
-    text-align: center;
-    /* (Agregamos esto para que la nueva reseña se vea con el mismo estilo) */
-    min-width: 250px;
-    margin-bottom: 20px;
-}
-
-.reseña .estrellas {
-    color: gold; /* Color llamativo para las estrellas */
-    font-size: 1.5em;
-    display: block;
-    margin-bottom: 10px;
-}
-
-.reseña .autor {
-    margin-top: 15px;
-    font-style: italic;
-    color: var(--color-texto-oscuro);
-    font-size: 0.9em;
-}
-
-.formulario-reseña {
-    max-width: 500px;
-    margin: 30px auto 0;
-    padding: 20px;
-    background-color: var(--color-fondo);
-    border-radius: 8px;
-    text-align: left;
-}
-
-.formulario-reseña label,
-.formulario-reseña select,
-.formulario-reseña textarea,
-.formulario-reseña button {
-    display: block;
-    width: 100%;
-    margin-top: 10px;
-}
-
-.formulario-reseña select,
-.formulario-reseña textarea {
-    padding: 10px;
-    border-radius: 5px;
-    border: 1px solid var(--color-borde-tabla);
-}
-
-/* ------------------
     ICONOS DE REDES SOCIALES (Añadir a STYLE.CSS)
 --------------------- */
 
@@ -597,5 +530,6 @@ footer p {
     margin: 5px 0;
 
 }
+
 
 
